@@ -1,6 +1,6 @@
 # Aryan Jangid
 
-**IT Student · Web Developer · OT/ICS Security Enthusiast**
+**IT Graduate · Web Developer · OT/ICS Security Enthusiast**
 
 📍 Pozzuoli, Naples, Italy | 📧 Jangidaryan85@icloud.com
 
@@ -10,19 +10,30 @@
 
 ## 👋 About Me
 
-I'm a 5th-year IT student at **Istituto Statale Pitagora** (Pozzuoli) specializing in informatics and telecommunications, graduating in 2026 (maturità). My focus is where **industrial systems meet cybersecurity** — a perspective shaped by growing up around my family's metalworking workshop and reinforced by years of studying networking, protocols, and system architecture.
+IT graduate from **Istituto Statale Pitagora** (Pozzuoli), specializing in informatics and telecommunications — maturità 2026. My focus is where **industrial systems meet cybersecurity**: a perspective shaped by growing up around my family's metalworking workshop and sharpened by years of studying networking, protocols, and system architecture.
 
-I build real, deployed projects — not just coursework exercises. From a full PHP/MySQL library management system running in production to a business website migrated to Netlify with Microsoft 365 mail preserved, I care about things that actually work.
+I build real, deployed projects — not just coursework exercises. From a full PHP/MySQL library system running in production, to an AI-powered exam simulator, to a business website with full DNS migration — I care about things that actually work.
 
 **Currently pursuing:**
-- 🎓 **Apple Developer Academy** at UniNa — application submitted (2026/27 cohort, ID: 13373)
-- 🔐 **EIPASS Security** certification & drone license (through school program)
-- 💼 **Deloitte Operazione Talenti 2026–2027** — application in progress
+- 🎓 **Ingegneria Informatica** — Università Federico II (TOLC-I)
+- 💼 **Deloitte Operazione Talenti 2026–2027** — application submitted
 - 🏭 Long-term goal: **GICSP** certification and a career in **OT/ICS Cybersecurity**
 
 ---
 
 ## 🚀 Featured Projects
+
+### 🤖 [MaturaAI](https://gguruji1985.github.io/Esame)
+> AI-powered maturità exam simulator — my capolavoro. Generates original tasks, simulates exams and gives instant feedback.
+
+**Vanilla JS · REST APIs · GitHub Pages · Claude · OpenAI · Gemini · Groq**
+
+- Four AI providers behind one switchable interface
+- Six quiz modes · Prima / Seconda / Orale exam flows
+- Feedback with ministerial grading criteria · CSV export
+- Zero frameworks, fully client-side, deployed on GitHub Pages
+
+---
 
 ### 📚 [Biblioteca Scolastica Pitagora](https://github.com/Gguruji1985/biblioteca-pitagora)
 > Full-stack school library management system — built, deployed, and maintained in production on Railway.
@@ -32,10 +43,30 @@ I build real, deployed projects — not just coursework exercises. From a full P
 - Role-based auth (admin / student) with secure session management
 - 1,139 real books imported; multi-API book details fetcher (Google Books, Open Library, ISBNdb)
 - Dark mode, onboarding wizard, QR code generation per book
-- Peer-to-peer book recommendations, threaded feedback/messaging system
-- Book request system for students; admin approval workflow
 - CSRF protection, rate limiting on login, input sanitization
 - 18 features shipped in a single production sprint
+
+---
+
+### 🔧 [AR MARINE S.r.l.s — Company Website](https://armarinesrls.it)
+> Complete static business website for a metal fabrication company in Pozzuoli.
+
+**HTML · CSS · JavaScript · Netlify**
+
+- Bilingual Italian landing page with contact/quote forms
+- A4 quote generator with jsPDF export and localStorage autosave
+- Full DNS migration from GoDaddy → Netlify (MX, SPF, DKIM, SRV, CAA)
+- Microsoft 365 business email preserved throughout migration
+
+---
+
+### 🚗 [Quiz Patente](https://github.com/Gguruji1985/quiz-patente)
+> Italian driving license quiz app with 7,139 questions.
+
+**React · Vite · JavaScript**
+
+- Category filtering, score tracking, localStorage persistence
+- Full UI redesign with mobile fixes and auto-advance behavior
 
 ---
 
@@ -55,31 +86,8 @@ I build real, deployed projects — not just coursework exercises. From a full P
 **Python · ReportLab · Markdown**
 
 - Mock ministerial exam papers for Sistemi e Reti, TPSIT
-- Answered Q&A data files covering cryptography, VPNs, firewalls, socket programming, concurrency, web servers
-- Auto-generated study PDFs with ReportLab; Spanish Civil War storia module included
-
----
-
-### 🔧 [AR MARINE S.r.l.s — Company Website](https://armarinesrls.it)
-> Complete static business website for a metal fabrication company in Pozzuoli.
-
-**HTML · CSS · JavaScript · Netlify Forms · Netlify DNS**
-
-- Bilingual Italian landing page with contact/quote forms
-- A4 quote generator with jsPDF export and localStorage autosave
-- Full DNS migration from GoDaddy → Netlify (MX, SPF, DKIM, SRV, CAA)
-- Microsoft 365 business email preserved throughout migration
-
----
-
-### 🚗 [Quiz Patente](https://github.com/Gguruji1985/quiz-patente)
-> Italian driving license quiz app with 7,139 questions.
-
-**React · Vite · JavaScript**
-
-- Category filtering, score tracking, localStorage persistence
-- Full UI redesign with mobile fixes and auto-advance behavior
-- Built for real daily use during license prep
+- Q&A covering cryptography, VPNs, firewalls, socket programming, concurrency
+- Auto-generated study PDFs with ReportLab
 
 ---
 
@@ -109,14 +117,13 @@ I build real, deployed projects — not just coursework exercises. From a full P
 
 ## 🎓 Certifications & Education
 
-|   |                                                                                  |
-|---|----------------------------------------------------------------------------------|
-| 🏫 | IT & Telecommunications — Istituto Statale Pitagora, Pozzuoli (2020–2026)       |
-| 📡 | **Cisco IoT** — NetAcad (certified)                                              |
-| 🌐 | **NetAcadCup** Cisco courses — completed                                         |
-| 🔐 | **EIPASS Security** Certification — in progress                                  |
-| 🚁 | Drone License (ENAC/EASA UAS) — in progress                                     |
-| 🍎 | Apple Developer Academy UniNa — application submitted (2026/27, ID: 13373)      |
+|   |                                                                            |
+|---|----------------------------------------------------------------------------|
+| 🏫 | IT & Telecommunications — Istituto Statale Pitagora, Pozzuoli (2020–2026) |
+| 📡 | **Cisco IoT** — NetAcad (certified)                                        |
+| 🌐 | **NetAcadCup** Cisco courses — completed                                   |
+| ✅ | **EIPASS 7 Moduli** — certified                                            |
+| 🚁 | **Drone Licence** (ENAC/EASA UAS A1–A3) — certified                       |
 
 ---
 
@@ -124,7 +131,7 @@ I build real, deployed projects — not just coursework exercises. From a full P
 
 My target is **Operational Technology (OT) / Industrial Control Systems (ICS) Cybersecurity** — the intersection of IT security and the physical industrial world.
 
-The path: finish school → university (Informatica or Ingegneria Informatica) → **GICSP certification** → work protecting real industrial infrastructure.
+The path: university (Ingegneria Informatica, Federico II) → **GICSP certification** → work protecting real industrial infrastructure.
 
 Background in metalworking + networking fundamentals + active security training on TryHackMe (Active Directory, Windows admin, network pentesting, OSINT CTFs) = a perspective most pure IT grads don't have.
 
