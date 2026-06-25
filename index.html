@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aryan Jangid — CV</title>
+<meta name="description" content="Aryan Jangid · IT student, web developer, OT/ICS security. Pozzuoli, Italy. Real, deployed projects.">
+<style>
+:root{
+  --paper:#FBFAF7; --paper-2:#F3F0E9; --card:#FFFFFF;
+  --ink:#191B1F; --ink-2:#34383F; --muted:#6E727A; --faint:#9A9387;
+  --line:#E7E2D8; --line-2:#D8D2C5;
+  --ember:#D2552A; --ember-2:#B0421C; --ember-soft:#FAEAE1;
+  --steel:#15191E; --steel-2:#222932; --steel-line:#39424d;
+  --serif:"Palatino Linotype","Book Antiqua",Palatino,"URW Palladio L",Georgia,serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --mono:"SFMono-Regular","Cascadia Code","JetBrains Mono",Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0; background:var(--paper); color:var(--ink); font-family:var(--sans);
+  font-size:16.5px; line-height:1.62; -webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--serif); font-weight:700; line-height:1.12; margin:0}
+p{margin:0 0 1em}
+a{color:var(--ember); text-decoration:none}
+a:hover{text-decoration:underline}
+::selection{background:var(--ember); color:#fff}
+:focus-visible{outline:2px solid var(--ember); outline-offset:3px; border-radius:3px}
+.wrap{max-width:1000px; margin:0 auto; padding:0 28px}
+
+/* reveal (graceful) */
+.rv{opacity:1}
+.js .rv{opacity:0; transform:translateY(18px); transition:opacity .6s ease, transform .6s ease}
+.js .rv.in{opacity:1; transform:none}
+.js .rv.d1{transition-delay:.07s}.js .rv.d2{transition-delay:.14s}.js .rv.d3{transition-delay:.21s}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}}
+
+/* ---------- HERO ---------- */
+.hero{position:relative; background:linear-gradient(155deg,#14181D,#1F2731); color:var(--paper); overflow:hidden}
+.hero .grid{position:absolute; inset:0; opacity:.5;
+  background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);
+  background-size:40px 40px; mask-image:radial-gradient(120% 100% at 80% 0%,#000,transparent 75%)}
+.hero .glow{position:absolute; width:520px; height:520px; right:-8%; top:-30%; border-radius:50%;
+  background:radial-gradient(circle,rgba(210,85,42,.5),transparent 62%); filter:blur(50px); pointer-events:none}
+.hero .tick{position:absolute; width:16px; height:16px; border-color:rgba(255,255,255,.28); pointer-events:none}
+.hero .tick.tl{top:22px; left:22px; border-left:1.5px solid; border-top:1.5px solid}
+.hero .tick.tr{top:22px; right:22px; border-right:1.5px solid; border-top:1.5px solid}
+.hero .tick.bl{bottom:22px; left:22px; border-left:1.5px solid; border-bottom:1.5px solid}
+.hero .tick.br{bottom:22px; right:22px; border-right:1.5px solid; border-bottom:1.5px solid}
+.hero .inner{position:relative; z-index:2; padding:84px 0 72px}
+.hero .kicker{font-family:var(--mono); font-size:12px; letter-spacing:.28em; text-transform:uppercase; color:var(--ember); margin-bottom:20px}
+.hero h1{font-size:clamp(46px,8.5vw,92px); letter-spacing:-.02em; line-height:.96}
+.hero .ul{height:4px; width:0; background:var(--ember); margin:20px 0 22px; border-radius:3px; max-width:240px}
+.js .hero .ul{transition:width 1s cubic-bezier(.2,.7,.2,1) .25s}
+.js .hero .ul.in{width:240px}
+@media (prefers-reduced-motion:reduce){.hero .ul{width:240px}}
+.hero .role{font-family:var(--mono); font-size:clamp(13px,2.2vw,16px); letter-spacing:.06em; color:#D8DEE6; text-transform:uppercase}
+.hero .role b{color:var(--ember); font-weight:600}
+.hero .pitch{margin:22px 0 0; max-width:60ch; color:#C3CAD2; font-size:clamp(15px,2vw,18px); font-family:var(--sans)}
+.meta{display:flex; flex-wrap:wrap; gap:8px 22px; margin-top:30px; font-family:var(--mono); font-size:13px; color:#AEB6BF}
+.meta span,.meta a{display:inline-flex; align-items:center; gap:8px}
+.meta a{color:#D8DEE6}
+.meta a:hover{color:var(--ember); text-decoration:none}
+.meta .dotsep{color:var(--steel-line)}
+.actions{display:flex; flex-wrap:wrap; gap:12px; margin-top:30px}
+.btn{display:inline-flex; align-items:center; gap:9px; font-family:var(--mono); font-size:13px; letter-spacing:.04em;
+  padding:12px 20px; border-radius:9px; cursor:pointer; border:1px solid transparent; transition:transform .15s, background .2s, border-color .2s, color .2s}
+.btn:hover{transform:translateY(-2px); text-decoration:none}
+.btn-primary{background:var(--ember); color:#fff; font-weight:600}
+.btn-primary:hover{background:#e2632f}
+.btn-ghost{border-color:var(--steel-line); color:#D8DEE6}
+.btn-ghost:hover{border-color:var(--ember); color:var(--ember)}
+.ghlive{display:block; margin-top:18px; font-family:var(--mono); font-size:12px; color:var(--faint); letter-spacing:.03em; min-height:14px}
+
+/* ---------- SECTIONS ---------- */
+.sec{padding:72px 0; border-top:1px solid var(--line)}
+.sechead{display:flex; align-items:baseline; gap:16px; margin-bottom:34px}
+.sechead .num{font-family:var(--mono); font-size:13px; font-weight:600; color:var(--ember); letter-spacing:.05em}
+.sechead h2{font-size:clamp(24px,3.6vw,34px); letter-spacing:-.01em; white-space:nowrap}
+.sechead .rule{flex:1; height:1px; background:var(--line-2)}
+
+/* about */
+.about{display:grid; grid-template-columns:1.55fr .9fr; gap:40px; align-items:start}
+@media (max-width:820px){.about{grid-template-columns:1fr; gap:26px}}
+.lead{font-size:clamp(17px,2.2vw,20px); color:var(--ink); line-height:1.55}
+.lead b{color:var(--ember-2)}
+.about .body{color:var(--ink-2); font-size:15.5px}
+.quote-side{background:var(--steel); color:var(--paper); border-radius:16px; padding:26px; position:relative; overflow:hidden}
+.quote-side::before{content:"“"; position:absolute; top:-18px; right:14px; font-family:var(--serif); font-size:120px; color:rgba(210,85,42,.35)}
+.quote-side .q{font-family:var(--serif); font-style:italic; font-size:21px; line-height:1.3; position:relative}
+.quote-side .by{font-family:var(--mono); font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--ember); margin-top:16px}
+
+/* focus / currently */
+.focus-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:16px}
+@media (max-width:840px){.focus-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.focus-grid{grid-template-columns:1fr}}
+.fcard{background:var(--card); border:1px solid var(--line); border-top:3px solid var(--ember); border-radius:12px; padding:18px 18px 20px}
+.fcard .st{display:inline-block; font-family:var(--mono); font-size:10px; letter-spacing:.12em; text-transform:uppercase; padding:3px 8px; border-radius:999px; margin-bottom:12px}
+.st.go{background:var(--ember-soft); color:var(--ember-2)}
+.st.prog{background:#EAF1F5; color:#2C6E8F}
+.st.sub{background:#EAF2EC; color:#2E7D4F}
+.fcard h4{font-size:17px; margin-bottom:6px}
+.fcard p{font-size:13px; color:var(--muted); margin:0}
+
+/* projects */
+.proj-grid{display:grid; grid-template-columns:1fr 1fr; gap:18px}
+@media (max-width:760px){.proj-grid{grid-template-columns:1fr}}
+.proj{position:relative; background:var(--card); border:1px solid var(--line); border-radius:14px; padding:24px; transition:transform .16s ease, border-color .2s, box-shadow .2s}
+.proj:hover{transform:translateY(-3px); border-color:var(--ember); box-shadow:0 18px 40px rgba(120,70,30,.08)}
+.proj .pidx{position:absolute; top:18px; right:20px; font-family:var(--mono); font-size:12px; color:#cfc8ba}
+.proj h3{font-size:20px; padding-right:34px}
+.proj h3 a{color:var(--ink)} .proj h3 a:hover{color:var(--ember); text-decoration:none}
+.proj .psum{color:var(--muted); font-size:14px; margin:7px 0 14px; line-height:1.5}
+.stack{display:flex; flex-wrap:wrap; gap:6px; margin-bottom:14px}
+.tagm{font-family:var(--mono); font-size:10.5px; letter-spacing:.02em; color:var(--ink-2); background:var(--paper-2); border:1px solid var(--line); border-radius:6px; padding:3px 8px}
+.proj ul{list-style:none; padding:0; margin:0}
+.proj li{position:relative; padding:6px 0 6px 18px; font-size:13.5px; color:var(--ink-2); border-bottom:1px solid var(--line); line-height:1.45}
+.proj li:last-child{border-bottom:0}
+.proj li::before{content:"▸"; position:absolute; left:0; top:6px; color:var(--ember); font-size:10px}
+.plinks{display:flex; gap:16px; margin-top:14px}
+.plinks a{font-family:var(--mono); font-size:12px; display:inline-flex; align-items:center; gap:6px}
+
+/* skills */
+.skills{display:grid; grid-template-columns:repeat(3,1fr); gap:28px}
+@media (max-width:820px){.skills{grid-template-columns:1fr}}
+.skill-group .lbl{font-family:var(--mono); font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin-bottom:14px; padding-bottom:8px; border-bottom:1px solid var(--line)}
+.chipset{display:flex; flex-wrap:wrap; gap:8px}
+.sk{font-size:13.5px; color:var(--ink); background:var(--card); border:1px solid var(--line); border-radius:8px; padding:7px 12px; display:inline-flex; align-items:center}
+.sk::before{content:""; width:6px; height:6px; border-radius:50%; background:var(--ember); margin-right:8px}
+
+/* timeline */
+.tl{border-left:2px solid var(--line-2); margin-left:6px; padding-left:26px}
+.tli{position:relative; padding-bottom:24px}
+.tli:last-child{padding-bottom:0}
+.tli::before{content:""; position:absolute; left:-33px; top:3px; width:12px; height:12px; border-radius:50%; background:var(--paper); border:2px solid var(--ember)}
+.tli.soft::before{border-color:var(--line-2); background:var(--paper)}
+.tli .yr{font-family:var(--mono); font-size:12px; color:var(--ember); letter-spacing:.04em; margin-bottom:3px}
+.tli h4{font-size:17px; margin-bottom:2px}
+.tli p{font-size:13.5px; color:var(--muted); margin:0}
+.tli .badge{font-family:var(--mono); font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted)}
+
+/* career */
+.career-wrap{display:grid; grid-template-columns:1fr .9fr; gap:36px; align-items:start}
+@media (max-width:820px){.career-wrap{grid-template-columns:1fr; gap:24px}}
+.career-wrap p{color:var(--ink-2); font-size:15.5px}
+.career-wrap .lead{margin-bottom:14px}
+.path{display:flex; flex-direction:column; gap:10px}
+.pstep{display:flex; align-items:center; gap:12px; font-family:var(--mono); font-size:13px; color:var(--ink)}
+.pstep .n{flex:0 0 26px; height:26px; border-radius:50%; background:var(--ember); color:#fff; display:grid; place-items:center; font-size:12px; font-weight:600}
+.pstep.goal .n{background:var(--steel)}
+.edge{position:relative; background:var(--ember-soft); border:1px solid #F0D6C8; border-radius:14px; padding:22px}
+.edge .lbl{font-family:var(--mono); font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--ember-2); margin-bottom:10px}
+.edge p{font-size:14.5px; color:var(--ink-2); margin:0}
+.edge b{color:var(--ember-2)}
+
+/* footer */
+.foot{background:var(--steel); color:var(--paper); padding:64px 0 48px; position:relative; overflow:hidden}
+.foot .glow{position:absolute; width:480px; height:480px; left:50%; top:-40%; transform:translateX(-50%); border-radius:50%; background:radial-gradient(circle,rgba(210,85,42,.3),transparent 62%); filter:blur(60px)}
+.foot .q{position:relative; font-family:var(--serif); font-style:italic; font-size:clamp(24px,4vw,40px); text-align:center; max-width:18ch; margin:0 auto 30px; line-height:1.2}
+.foot .q .em{color:var(--ember)}
+.foot .frow{position:relative; display:flex; flex-wrap:wrap; gap:14px; justify-content:center; margin-bottom:28px}
+.foot .fmeta{position:relative; text-align:center; font-family:var(--mono); font-size:12px; color:var(--faint); letter-spacing:.04em}
+.foot .fmeta a{color:#C3CAD2}
+
+/* print */
+@media print{
+  @page{margin:14mm}
+  body{background:#fff; color:#000; font-size:11pt}
+  a{color:#000; text-decoration:none}
+  .no-print{display:none !important}
+  .hero{background:#fff !important; color:#000; border-bottom:2.5px solid #000}
+  .hero .grid,.hero .glow,.hero .tick{display:none}
+  .hero .inner{padding:0 0 16px}
+  .hero h1{color:#000} .hero .kicker{color:var(--ember)} .hero .role{color:#000} .hero .role b{color:var(--ember)}
+  .hero .pitch{color:#222} .meta,.meta a{color:#333} .hero .ul{width:200px !important; background:var(--ember)}
+  .sec{padding:18px 0; border-top:1px solid #ccc; break-inside:avoid}
+  .quote-side,.foot{background:#f4f4f4 !important; color:#000}
+  .quote-side .q,.foot .q{color:#000} .foot .glow{display:none}
+  .proj,.fcard,.edge{break-inside:avoid; box-shadow:none}
+  .rv{opacity:1 !important; transform:none !important}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+  <div class="grid"></div><div class="glow"></div>
+  <span class="tick tl"></span><span class="tick tr"></span><span class="tick bl"></span><span class="tick br"></span>
+  <div class="wrap inner">
+    <p class="kicker rv">Curriculum Vitae · Pozzuoli, Italy</p>
+    <h1 class="rv d1">Aryan<br>Jangid</h1>
+    <div class="ul rv"></div>
+    <p class="role rv d1">IT Student &nbsp;·&nbsp; Web Developer &nbsp;·&nbsp; <b>OT/ICS Security</b></p>
+    <p class="pitch rv d2">Where industrial systems meet cybersecurity. I build real, deployed projects — from a production library platform to an AI exam simulator — and I'm headed toward protecting the physical world's networks.</p>
+    <div class="meta rv d2">
+      <span>📍 Pozzuoli · Naples · Italy</span>
+      <span class="dotsep">/</span>
+      <a href="mailto:Jangidaryan85@icloud.com">📧 Jangidaryan85@icloud.com</a>
+      <span class="dotsep">/</span>
+      <a href="https://github.com/Gguruji1985" target="_blank" rel="noopener">⌥ github.com/Gguruji1985</a>
+    </div>
+    <div class="actions rv d3 no-print">
+      <button class="btn btn-primary" id="printBtn">⤓ Save as PDF</button>
+      <a class="btn btn-ghost" href="https://gguruji1985.github.io" target="_blank" rel="noopener">Portfolio ↗</a>
+      <a class="btn btn-ghost" href="https://gguruji1985.github.io/Esame" target="_blank" rel="noopener">MaturaAI demo ↗</a>
+    </div>
+    <span class="ghlive no-print" id="ghLive"></span>
+  </div>
+</header>
+
+<main>
+
+<!-- ===== 01 ABOUT ===== -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sechead rv"><span class="num">01</span><h2>Profile</h2><span class="rule"></span></div>
+    <div class="about">
+      <div>
+        <p class="lead rv">I'm a 5th-year IT student at <b>Istituto Statale Pitagora</b> (Pozzuoli), specializing in informatics and telecommunications and graduating in 2026.</p>
+        <p class="body rv d1">My focus is the point where industrial systems meet cybersecurity — a perspective shaped by growing up around my family's marine metalworking workshop, and sharpened by years of studying networking, protocols and system architecture.</p>
+        <p class="body rv d1" style="margin:0">I build things that actually work. From a full PHP/MySQL library system running in production, to a business website migrated to Netlify with Microsoft 365 mail preserved, to an AI-powered exam simulator — I care about real, deployed software, not just coursework.</p>
+      </div>
+      <div class="quote-side rv d2">
+        <div class="q">Background in metalworking + networking fundamentals + hands-on security training = a perspective most pure-IT grads don't have.</div>
+        <div class="by">— the short version</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 02 CURRENTLY ===== -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sechead rv"><span class="num">02</span><h2>Currently pursuing</h2><span class="rule"></span></div>
+    <div class="focus-grid">
+      <div class="fcard rv"><span class="st sub">submitted</span><h4>Apple Developer Academy</h4><p>UniNa · 2026/27 cohort (ID 13373).</p></div>
+      <div class="fcard rv d1"><span class="st prog">in progress</span><h4>Deloitte · Operazione Talenti</h4><p>2026–2027 programme · application.</p></div>
+      <div class="fcard rv d2"><span class="st prog">in progress</span><h4>EIPASS Security · Drone licence</h4><p>Security cert &amp; ENAC/EASA UAS, via school.</p></div>
+      <div class="fcard rv d3"><span class="st go">long-term goal</span><h4>GICSP Certification</h4><p>The milestone for an OT/ICS security career.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 03 PROJECTS ===== -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sechead rv"><span class="num">03</span><h2>Featured projects</h2><span class="rule"></span></div>
+    <div class="proj-grid">
+
+      <div class="proj rv"><span class="pidx">01</span>
+        <h3><a href="https://gguruji1985.github.io/Esame" target="_blank" rel="noopener">MaturaAI</a></h3>
+        <p class="psum">AI-powered maturità exam simulator — my capolavoro. Generates original tasks, simulates exams and gives instant feedback.</p>
+        <div class="stack"><span class="tagm">Vanilla JS</span><span class="tagm">REST APIs</span><span class="tagm">GitHub Pages</span><span class="tagm">Claude · OpenAI · Gemini · Groq</span></div>
+        <ul><li>Four AI providers behind one switchable interface</li><li>Six quiz modes · Prima / Seconda / Orale exam flows</li><li>Feedback with ministerial grading criteria · CSV export</li><li>Zero frameworks, fully client-side</li></ul>
+        <div class="plinks"><a href="https://gguruji1985.github.io/Esame" target="_blank" rel="noopener">live ↗</a><a href="https://github.com/Gguruji1985/Esame" target="_blank" rel="noopener">code ↗</a></div>
+      </div>
+
+      <div class="proj rv d1"><span class="pidx">02</span>
+        <h3><a href="https://github.com/Gguruji1985/biblioteca-pitagora" target="_blank" rel="noopener">Biblioteca Pitagora</a></h3>
+        <p class="psum">Full-stack school library management system — built, deployed and maintained in production on Railway.</p>
+        <div class="stack"><span class="tagm">PHP</span><span class="tagm">MySQL</span><span class="tagm">JavaScript</span><span class="tagm">Railway</span></div>
+        <ul><li>Role-based auth with secure session management</li><li>1,139 books imported · multi-API details fetcher</li><li>Dark mode, onboarding wizard, per-book QR codes</li><li>CSRF protection, login rate-limiting · 18 features in one sprint</li></ul>
+        <div class="plinks"><a href="https://github.com/Gguruji1985/biblioteca-pitagora" target="_blank" rel="noopener">code ↗</a></div>
+      </div>
+
+      <div class="proj rv"><span class="pidx">03</span>
+        <h3><a href="https://armarinesrls.it" target="_blank" rel="noopener">AR Marine S.r.l.s</a></h3>
+        <p class="psum">Complete bilingual business website for the family metal-fabrication company in Pozzuoli.</p>
+        <div class="stack"><span class="tagm">HTML</span><span class="tagm">CSS</span><span class="tagm">JavaScript</span><span class="tagm">Netlify</span></div>
+        <ul><li>A4 quote generator with jsPDF export &amp; autosave</li><li>Full DNS migration GoDaddy → Netlify (MX, SPF, DKIM, CAA)</li><li>Microsoft 365 business email preserved throughout</li></ul>
+        <div class="plinks"><a href="https://armarinesrls.it" target="_blank" rel="noopener">live ↗</a></div>
+      </div>
+
+      <div class="proj rv d1"><span class="pidx">04</span>
+        <h3><a href="https://github.com/Gguruji1985/quiz-patente" target="_blank" rel="noopener">Quiz Patente</a></h3>
+        <p class="psum">Italian driving-licence quiz app with 7,139 questions — built for real daily use during licence prep.</p>
+        <div class="stack"><span class="tagm">React</span><span class="tagm">Vite</span><span class="tagm">JavaScript</span></div>
+        <ul><li>Category filtering, score tracking, localStorage persistence</li><li>Full UI redesign with mobile fixes &amp; auto-advance</li></ul>
+        <div class="plinks"><a href="https://github.com/Gguruji1985/quiz-patente" target="_blank" rel="noopener">code ↗</a></div>
+      </div>
+
+      <div class="proj rv"><span class="pidx">05</span>
+        <h3><a href="https://github.com/Gguruji1985/voiceread" target="_blank" rel="noopener">VoiceRead</a></h3>
+        <p class="psum">Text-to-speech Chrome extension that reads selected web content aloud.</p>
+        <div class="stack"><span class="tagm">JavaScript</span><span class="tagm">Chrome Extension API</span><span class="tagm">Web Speech API</span></div>
+        <ul><li>Select any text and have it read instantly</li><li>Lightweight, zero-dependency, privacy-respecting</li></ul>
+        <div class="plinks"><a href="https://github.com/Gguruji1985/voiceread" target="_blank" rel="noopener">code ↗</a></div>
+      </div>
+
+      <div class="proj rv d1"><span class="pidx">06</span>
+        <h3><a href="https://github.com/Gguruji1985/preparazione_di_maturita" target="_blank" rel="noopener">Preparazione di Maturità</a></h3>
+        <p class="psum">Study materials and Q&amp;A datasets for the Italian maturità exams, with auto-generated PDFs.</p>
+        <div class="stack"><span class="tagm">Python</span><span class="tagm">ReportLab</span><span class="tagm">Markdown</span></div>
+        <ul><li>Mock ministerial papers for Sistemi e Reti &amp; TPSIT</li><li>Q&amp;A on cryptography, VPNs, firewalls, sockets, concurrency</li><li>Study PDFs auto-generated with ReportLab</li></ul>
+        <div class="plinks"><a href="https://github.com/Gguruji1985/preparazione_di_maturita" target="_blank" rel="noopener">code ↗</a></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== 04 SKILLS ===== -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sechead rv"><span class="num">04</span><h2>Skills &amp; tools</h2><span class="rule"></span></div>
+    <div class="skills">
+      <div class="skill-group rv">
+        <div class="lbl">Languages &amp; web</div>
+        <div class="chipset"><span class="sk">JavaScript</span><span class="sk">PHP</span><span class="sk">Python</span><span class="sk">React</span><span class="sk">HTML5</span><span class="sk">CSS3</span><span class="sk">MySQL / SQL</span></div>
+      </div>
+      <div class="skill-group rv d1">
+        <div class="lbl">Networking &amp; security</div>
+        <div class="chipset"><span class="sk">Cisco (NetAcad)</span><span class="sk">Linux</span><span class="sk">Wireshark</span><span class="sk">Active Directory</span><span class="sk">TryHackMe CTF</span><span class="sk">Cryptography</span><span class="sk">Firewalls / VPN</span></div>
+      </div>
+      <div class="skill-group rv d2">
+        <div class="lbl">Platforms &amp; tools</div>
+        <div class="chipset"><span class="sk">Git / GitHub</span><span class="sk">Netlify</span><span class="sk">Railway</span><span class="sk">VS Code</span><span class="sk">jsPDF</span><span class="sk">ReportLab</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 05 EDUCATION ===== -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sechead rv"><span class="num">05</span><h2>Certifications &amp; education</h2><span class="rule"></span></div>
+    <div class="tl">
+      <div class="tli rv"><div class="yr">2020 — 2026</div><h4>IT &amp; Telecommunications</h4><p>Istituto Statale Pitagora, Pozzuoli · Maturità 2026</p></div>
+      <div class="tli rv"><div class="yr">Certified</div><h4>Cisco IoT — NetAcad</h4><p>Plus NetAcad Cup Cisco course track completed</p></div>
+      <div class="tli rv"><div class="yr">Certified</div><h4>EIPASS 7 Moduli · ENAC/EASA Drone Licence (A1–A3)</h4><p>Digital-skills certification &amp; UAS Open-category licence</p></div>
+      <div class="tli soft rv"><div class="yr">In progress <span class="badge">· via school</span></div><h4>EIPASS Security</h4><p>Security-focused certification</p></div>
+      <div class="tli soft rv"><div class="yr">Submitted · 2026/27</div><h4>Apple Developer Academy — UniNa</h4><p>Application ID 13373</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 06 DIRECTION ===== -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sechead rv"><span class="num">06</span><h2>Career direction</h2><span class="rule"></span></div>
+    <div class="career-wrap">
+      <div>
+        <p class="lead rv">My target is <b>OT/ICS cybersecurity</b> — the intersection of IT security and the physical industrial world: factories, energy, water.</p>
+        <p class="rv d1" style="margin:0">It's where a few different threads of mine converge — a workshop upbringing, networking fundamentals, and active security training on TryHackMe (Active Directory, Windows admin, network pentesting, OSINT CTFs).</p>
+      </div>
+      <div class="rv d1">
+        <div class="path" style="margin-bottom:22px">
+          <div class="pstep"><span class="n">1</span> Diploma — Maturità 2026</div>
+          <div class="pstep"><span class="n">2</span> Ingegneria Informatica · Federico II</div>
+          <div class="pstep"><span class="n">3</span> GICSP certification</div>
+          <div class="pstep goal"><span class="n">★</span> Protecting real industrial infrastructure</div>
+        </div>
+        <div class="edge"><div class="lbl">The edge</div><p>Most security people come from pure IT. I come from <b>the factory floor and the network stack at once</b> — I understand both the machine and the protocol protecting it.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="foot">
+  <div class="glow"></div>
+  <div class="wrap">
+    <p class="q">"Build things that <span class="em">actually work</span>."</p>
+    <div class="frow no-print">
+      <a class="btn btn-primary" href="mailto:Jangidaryan85@icloud.com">📧 Get in touch</a>
+      <a class="btn btn-ghost" href="https://github.com/Gguruji1985" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+    <p class="fmeta">Aryan Jangid · Pozzuoli, Italy · <a href="mailto:Jangidaryan85@icloud.com">Jangidaryan85@icloud.com</a> · <a href="https://github.com/Gguruji1985" target="_blank" rel="noopener">@Gguruji1985</a></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  var root=document.documentElement; root.classList.add("js");
+  var reduce=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* print */
+  var pb=document.getElementById("printBtn");
+  if(pb) pb.addEventListener("click",function(){window.print();});
+
+  /* reveal */
+  var rvs=document.querySelectorAll(".rv");
+  if("IntersectionObserver" in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}});},{threshold:.12, rootMargin:"0px 0px -6% 0px"});
+    rvs.forEach(function(el){io.observe(el);});
+  } else { rvs.forEach(function(el){el.classList.add("in");}); }
+  // hero underline draws on load regardless
+  setTimeout(function(){var ul=document.querySelector(".hero .ul"); if(ul) ul.classList.add("in");},120);
+
+  /* live GitHub stat (unauthenticated, optional) */
+  var el=document.getElementById("ghLive");
+  if(el){
+    fetch("https://api.github.com/users/Gguruji1985").then(function(r){return r.ok?r.json():Promise.reject();}).then(function(u){
+      el.textContent="⟳ "+u.public_repos+" public repositories · "+u.followers+" followers on GitHub";
+    }).catch(function(){ el.style.display="none"; });
+  }
+})();
+</script>
+</body>
+</html>
