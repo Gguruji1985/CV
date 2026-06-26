@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Curriculum Vitae — Aryan Jangid</title>
+<style>
+  @page { margin: 18mm 16mm; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Georgia", serif; font-size: 11pt; color: #1a1a1a;
+    background: #fff; max-width: 760px; margin: 0 auto; padding: 32px 28px; line-height: 1.5; }
+
+  /* header */
+  .head { border-bottom: 2px solid #1a1a1a; padding-bottom: 12px; margin-bottom: 18px; }
+  .head h1 { font-size: 26pt; letter-spacing: -.01em; font-weight: 700; }
+  .head .role { font-family: Arial, sans-serif; font-size: 10.5pt; color: #444; margin-top: 3px; }
+  .head .contacts { margin-top: 8px; font-family: Arial, sans-serif; font-size: 9.5pt;
+    color: #333; display: flex; flex-wrap: wrap; gap: 4px 20px; }
+  .head .contacts a { color: #1a1a1a; text-decoration: none; }
+
+  /* sections */
+  .sec { margin-top: 18px; }
+  .sec h2 { font-family: Arial, sans-serif; font-size: 9pt; font-weight: 700;
+    letter-spacing: .2em; text-transform: uppercase; color: #555;
+    border-bottom: 1px solid #ccc; padding-bottom: 4px; margin-bottom: 10px; }
+
+  /* rows */
+  .row { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; margin-bottom: 12px; align-items: start; }
+  .row .title { font-weight: 700; font-size: 11pt; }
+  .row .place { font-style: italic; font-size: 10.5pt; color: #333; }
+  .row .date { font-family: Arial, sans-serif; font-size: 9.5pt; color: #666; white-space: nowrap; text-align: right; }
+  .row .desc { font-size: 10.5pt; color: #333; grid-column: 1 / -1; margin-top: 2px; }
+  .row ul { grid-column: 1 / -1; margin: 4px 0 0 16px; }
+  .row li { font-size: 10.5pt; color: #333; margin-bottom: 2px; }
+
+  /* skills */
+  .skillrow { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 6px; align-items: baseline; }
+  .skillrow .lbl { font-family: Arial, sans-serif; font-size: 9.5pt; font-weight: 700;
+    color: #555; min-width: 130px; }
+  .skillrow .val { font-size: 10.5pt; color: #222; }
+
+  /* lang table */
+  .ltable { width: 100%; border-collapse: collapse; font-size: 10.5pt; }
+  .ltable td, .ltable th { padding: 5px 8px; border: 1px solid #ddd; }
+  .ltable th { font-family: Arial, sans-serif; font-size: 9pt; background: #f5f5f5; font-weight: 700; }
+
+  /* print */
+  @media print {
+    body { padding: 0; }
+    a { color: #1a1a1a; text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="head">
+  <h1>Aryan Jangid</h1>
+  <div class="role">Studente di Informatica e Telecomunicazioni &nbsp;·&nbsp; Futuro ingegnere &nbsp;·&nbsp; Cybersecurity OT/ICS</div>
+  <div class="contacts">
+    <span>📍 Pozzuoli (NA), Italia</span>
+    <span>📧 <a href="mailto:Jangidaryan85@icloud.com">Jangidaryan85@icloud.com</a></span>
+    <span>🔗 <a href="https://github.com/Gguruji1985">github.com/Gguruji1985</a></span>
+    <span>🌐 <a href="https://gguruji1985.github.io/CV">gguruji1985.github.io/CV</a></span>
+  </div>
+</div>
+
+<!-- PROFILO -->
+<div class="sec">
+  <h2>Profilo</h2>
+  <p style="font-size:10.5pt;color:#222">
+    Studente al quinto anno del corso Informatica e Telecomunicazioni presso l'I.S. «Pitagora» di Pozzuoli, con maturità prevista nel 2026. Ho sviluppato competenze solide in sviluppo web, reti, basi di dati e sicurezza informatica attraverso progetti reali e certificazioni Cisco. Il mio obiettivo professionale è la cybersecurity OT/ICS, con particolare interesse alla protezione di sistemi industriali e infrastrutture critiche.
+  </p>
+</div>
+
+<!-- ISTRUZIONE -->
+<div class="sec">
+  <h2>Istruzione</h2>
+  <div class="row">
+    <div class="title">Diploma di Maturità — Informatica e Telecomunicazioni</div>
+    <div class="date">2020 – 2026</div>
+    <div class="place">Istituto Statale «Pitagora», Pozzuoli (NA)</div>
+    <ul>
+      <li>Indirizzo: Informatica e Telecomunicazioni (5IB)</li>
+      <li>Materie principali: Informatica, Sistemi e Reti, TPSIT, Matematica, Inglese</li>
+      <li>Scritti: Prima prova 15/20, Seconda prova 20/20 — Totale elaborati: 68/80</li>
+    </ul>
+  </div>
+</div>
+
+<!-- PROGETTI -->
+<div class="sec">
+  <h2>Progetti principali</h2>
+
+  <div class="row">
+    <div class="title">MaturaAI — Simulatore d'esame con AI</div>
+    <div class="date">2025 – 2026</div>
+    <div class="place"><a href="https://gguruji1985.github.io/Esame">gguruji1985.github.io/Esame</a></div>
+    <ul>
+      <li>Simulatore di esame di maturità basato su IA: genera tracce originali, simula prove e fornisce feedback con criteri ministeriali</li>
+      <li>Integrazione con quattro provider AI: Claude (Anthropic), OpenAI, Google Gemini, Groq</li>
+      <li>Sviluppato in JavaScript puro (vanilla), senza framework, deployato su GitHub Pages</li>
+      <li>Capolavoro dell'esame di maturità 2026</li>
+    </ul>
+  </div>
+
+  <div class="row">
+    <div class="title">Biblioteca Scolastica Pitagora</div>
+    <div class="date">2024 – 2025</div>
+    <div class="place">Deployato su Railway · PHP / MySQL</div>
+    <ul>
+      <li>Sistema gestionale completo per la biblioteca scolastica, sviluppato e mantenuto in produzione</li>
+      <li>1.139 libri importati, autenticazione per ruoli (admin/studente), generazione QR code, dark mode</li>
+      <li>Protezione CSRF, rate limiting sul login, sanitizzazione input</li>
+    </ul>
+  </div>
+
+  <div class="row">
+    <div class="title">Sito Web AR Marine S.r.l.s</div>
+    <div class="date">2024</div>
+    <div class="place"><a href="https://armarinesrls.it">armarinesrls.it</a> · Netlify</div>
+    <ul>
+      <li>Sito aziendale bilingue per officina di lavorazione metalli (famiglia)</li>
+      <li>Generatore preventivi in PDF con jsPDF; migrazione DNS completa da GoDaddy a Netlify</li>
+    </ul>
+  </div>
+
+  <div class="row">
+    <div class="title">Quiz Patente</div>
+    <div class="date">2025</div>
+    <div class="place">React / Vite · JavaScript</div>
+    <ul>
+      <li>App quiz per la patente B con 7.139 domande, filtro per categoria, localStorage</li>
+    </ul>
+  </div>
+</div>
+
+<!-- COMPETENZE -->
+<div class="sec">
+  <h2>Competenze tecniche</h2>
+  <div class="skillrow"><span class="lbl">Linguaggi:</span><span class="val">JavaScript, PHP, Python, HTML5, CSS3, SQL</span></div>
+  <div class="skillrow"><span class="lbl">Framework / Lib:</span><span class="val">React, Vite, jsPDF, ReportLab</span></div>
+  <div class="skillrow"><span class="lbl">Reti e sicurezza:</span><span class="val">TCP/IP, HTTP/S, TLS, DNS, Firewall, Wireshark, Active Directory, TryHackMe CTF</span></div>
+  <div class="skillrow"><span class="lbl">Database:</span><span class="val">MySQL, progettazione E/R, normalizzazione, SQL (DDL/DML/DQL)</span></div>
+  <div class="skillrow"><span class="lbl">Strumenti:</span><span class="val">Git, GitHub, Netlify, Railway, VS Code, Linux</span></div>
+  <div class="skillrow"><span class="lbl">Altro:</span><span class="val">Architettura client-server, API REST, JSON, async/await</span></div>
+</div>
+
+<!-- CERTIFICAZIONI -->
+<div class="sec">
+  <h2>Certificazioni</h2>
+  <div class="row">
+    <div class="title">Cisco IoT Fundamentals — NetAcad</div>
+    <div class="date">Certificato</div>
+  </div>
+  <div class="row">
+    <div class="title">Cisco NetAcadCup — percorso completo</div>
+    <div class="date">Completato</div>
+  </div>
+  <div class="row">
+    <div class="title">EIPASS 7 Moduli — Certificazione digitale</div>
+    <div class="date">Certificato</div>
+  </div>
+  <div class="row">
+    <div class="title">Patente droni ENAC/EASA — Categoria aperta A1–A3</div>
+    <div class="date">Certificato</div>
+  </div>
+  <div class="row">
+    <div class="title">Corso GOL — Centro ARES (ex-base NATO, Bagnoli)</div>
+    <div class="date">2025</div>
+  </div>
+</div>
+
+<!-- LINGUE -->
+<div class="sec">
+  <h2>Lingue</h2>
+  <table class="ltable">
+    <tr><th>Lingua</th><th>Comprensione</th><th>Produzione scritta</th><th>Produzione orale</th></tr>
+    <tr><td>Italiano</td><td>Madrelingua</td><td>Madrelingua</td><td>Madrelingua</td></tr>
+    <tr><td>Inglese</td><td>B2</td><td>B2</td><td>B2</td></tr>
+  </table>
+</div>
+
+<!-- OBIETTIVO -->
+<div class="sec">
+  <h2>Obiettivo professionale</h2>
+  <p style="font-size:10.5pt;color:#222">
+    Cybersecurity OT/ICS — protezione di reti industriali, sistemi SCADA/PLC e infrastrutture critiche. Percorso pianificato: Ingegneria Informatica (Università Federico II, Napoli) → certificazione GICSP.
+  </p>
+</div>
+
+</body>
+</html>
