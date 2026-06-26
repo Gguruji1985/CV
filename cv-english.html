@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CV — Aryan Jangid</title>
+<style>
+  @page { margin: 18mm 16mm; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Georgia", serif; font-size: 11pt; color: #1a1a1a;
+    background: #fff; max-width: 760px; margin: 0 auto; padding: 32px 28px; line-height: 1.5; }
+
+  .head { border-bottom: 2px solid #1a1a1a; padding-bottom: 12px; margin-bottom: 18px; }
+  .head h1 { font-size: 26pt; letter-spacing: -.01em; font-weight: 700; }
+  .head .role { font-family: Arial, sans-serif; font-size: 10.5pt; color: #444; margin-top: 3px; }
+  .head .contacts { margin-top: 8px; font-family: Arial, sans-serif; font-size: 9.5pt;
+    color: #333; display: flex; flex-wrap: wrap; gap: 4px 20px; }
+  .head .contacts a { color: #1a1a1a; text-decoration: none; }
+
+  .sec { margin-top: 18px; }
+  .sec h2 { font-family: Arial, sans-serif; font-size: 9pt; font-weight: 700;
+    letter-spacing: .2em; text-transform: uppercase; color: #555;
+    border-bottom: 1px solid #ccc; padding-bottom: 4px; margin-bottom: 10px; }
+
+  .row { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; margin-bottom: 12px; align-items: start; }
+  .row .title { font-weight: 700; font-size: 11pt; }
+  .row .place { font-style: italic; font-size: 10.5pt; color: #333; }
+  .row .date { font-family: Arial, sans-serif; font-size: 9.5pt; color: #666; white-space: nowrap; text-align: right; }
+  .row .desc { font-size: 10.5pt; color: #333; grid-column: 1 / -1; margin-top: 2px; }
+  .row ul { grid-column: 1 / -1; margin: 4px 0 0 16px; }
+  .row li { font-size: 10.5pt; color: #333; margin-bottom: 2px; }
+
+  .skillrow { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 6px; align-items: baseline; }
+  .skillrow .lbl { font-family: Arial, sans-serif; font-size: 9.5pt; font-weight: 700;
+    color: #555; min-width: 130px; }
+  .skillrow .val { font-size: 10.5pt; color: #222; }
+
+  .ltable { width: 100%; border-collapse: collapse; font-size: 10.5pt; }
+  .ltable td, .ltable th { padding: 5px 8px; border: 1px solid #ddd; }
+  .ltable th { font-family: Arial, sans-serif; font-size: 9pt; background: #f5f5f5; font-weight: 700; }
+
+  @media print {
+    body { padding: 0; }
+    a { color: #1a1a1a; text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="head">
+  <h1>Aryan Jangid</h1>
+  <div class="role">IT Student &nbsp;·&nbsp; Web Developer &nbsp;·&nbsp; OT/ICS Cybersecurity</div>
+  <div class="contacts">
+    <span>📍 Pozzuoli (NA), Italy</span>
+    <span>📧 <a href="mailto:Jangidaryan85@icloud.com">Jangidaryan85@icloud.com</a></span>
+    <span>🔗 <a href="https://github.com/Gguruji1985">github.com/Gguruji1985</a></span>
+    <span>🌐 <a href="https://gguruji1985.github.io/CV">gguruji1985.github.io/CV</a></span>
+  </div>
+</div>
+
+<!-- PROFILE -->
+<div class="sec">
+  <h2>Profile</h2>
+  <p style="font-size:10.5pt;color:#222">
+    Final-year IT & Telecommunications student at I.S. «Pitagora» (Pozzuoli), graduating 2026. Strong practical background in web development, networking, databases and cybersecurity, built through real deployed projects and Cisco certifications. Career target: OT/ICS cybersecurity — protecting industrial networks and critical infrastructure.
+  </p>
+</div>
+
+<!-- EDUCATION -->
+<div class="sec">
+  <h2>Education</h2>
+  <div class="row">
+    <div class="title">IT & Telecommunications — Maturità Diploma</div>
+    <div class="date">2020 – 2026</div>
+    <div class="place">Istituto Statale «Pitagora», Pozzuoli, Italy</div>
+    <ul>
+      <li>Specialisation: Informatics and Telecommunications (5IB)</li>
+      <li>Core subjects: Informatics, Networks & Systems, TPSIT, Mathematics, English</li>
+      <li>Written exams: 15/20 (Italian), 20/20 (Technical) — Total: 68/80</li>
+    </ul>
+  </div>
+</div>
+
+<!-- PROJECTS -->
+<div class="sec">
+  <h2>Projects</h2>
+
+  <div class="row">
+    <div class="title">MaturaAI — AI-powered Exam Simulator</div>
+    <div class="date">2025 – 2026</div>
+    <div class="place"><a href="https://gguruji1985.github.io/Esame">gguruji1985.github.io/Esame</a></div>
+    <ul>
+      <li>Generates original exam tasks, simulates written exams and gives instant AI-powered feedback</li>
+      <li>Four AI providers in one interface: Claude (Anthropic), OpenAI, Google Gemini, Groq</li>
+      <li>Built in vanilla JavaScript (no frameworks), deployed on GitHub Pages — final-year capstone project</li>
+    </ul>
+  </div>
+
+  <div class="row">
+    <div class="title">Biblioteca Scolastica Pitagora</div>
+    <div class="date">2024 – 2025</div>
+    <div class="place">Production · PHP / MySQL / Railway</div>
+    <ul>
+      <li>Full-stack school library management system, live in production</li>
+      <li>1,139 books imported · role-based auth · QR codes · dark mode · CSRF protection</li>
+    </ul>
+  </div>
+
+  <div class="row">
+    <div class="title">AR Marine S.r.l.s — Company Website</div>
+    <div class="date">2024</div>
+    <div class="place"><a href="https://armarinesrls.it">armarinesrls.it</a> · Netlify</div>
+    <ul>
+      <li>Bilingual business site for family metalworking company; PDF quote generator with jsPDF</li>
+      <li>Full DNS migration GoDaddy → Netlify (MX, SPF, DKIM, CAA) with Microsoft 365 mail preserved</li>
+    </ul>
+  </div>
+
+  <div class="row">
+    <div class="title">Quiz Patente</div>
+    <div class="date">2025</div>
+    <div class="place">React / Vite</div>
+    <ul>
+      <li>Italian driving licence quiz app — 7,139 questions, category filters, score tracking</li>
+    </ul>
+  </div>
+
+  <div class="row">
+    <div class="title">VoiceRead — Chrome Extension</div>
+    <div class="date">2024</div>
+    <div class="place">JavaScript · Chrome Extension API · Web Speech API</div>
+    <ul>
+      <li>Text-to-speech extension: select any text on a webpage and have it read aloud instantly</li>
+    </ul>
+  </div>
+</div>
+
+<!-- SKILLS -->
+<div class="sec">
+  <h2>Technical Skills</h2>
+  <div class="skillrow"><span class="lbl">Languages:</span><span class="val">JavaScript, PHP, Python, HTML5, CSS3, SQL</span></div>
+  <div class="skillrow"><span class="lbl">Frameworks / Libs:</span><span class="val">React, Vite, jsPDF, ReportLab</span></div>
+  <div class="skillrow"><span class="lbl">Networking & Security:</span><span class="val">TCP/IP, HTTP/S, TLS, DNS, Firewalls, Wireshark, Active Directory, TryHackMe CTF</span></div>
+  <div class="skillrow"><span class="lbl">Databases:</span><span class="val">MySQL, E/R design, normalisation, SQL (DDL/DML/DQL)</span></div>
+  <div class="skillrow"><span class="lbl">Tools:</span><span class="val">Git, GitHub, Netlify, Railway, VS Code, Linux</span></div>
+  <div class="skillrow"><span class="lbl">Other:</span><span class="val">REST APIs, JSON, async/await, client-server architecture</span></div>
+</div>
+
+<!-- CERTIFICATIONS -->
+<div class="sec">
+  <h2>Certifications</h2>
+  <div class="row">
+    <div class="title">Cisco IoT Fundamentals — NetAcad</div>
+    <div class="date">Certified</div>
+  </div>
+  <div class="row">
+    <div class="title">Cisco NetAcadCup — full course track</div>
+    <div class="date">Completed</div>
+  </div>
+  <div class="row">
+    <div class="title">EIPASS 7 Moduli — Digital skills certification</div>
+    <div class="date">Certified</div>
+  </div>
+  <div class="row">
+    <div class="title">Drone Licence — ENAC/EASA Open Category A1–A3</div>
+    <div class="date">Certified</div>
+  </div>
+  <div class="row">
+    <div class="title">GOL Programme — Centro ARES (former NATO base, Bagnoli)</div>
+    <div class="date">2025</div>
+  </div>
+</div>
+
+<!-- LANGUAGES -->
+<div class="sec">
+  <h2>Languages</h2>
+  <table class="ltable">
+    <tr><th>Language</th><th>Understanding</th><th>Writing</th><th>Speaking</th></tr>
+    <tr><td>Italian</td><td>Native</td><td>Native</td><td>Native</td></tr>
+    <tr><td>English</td><td>B2</td><td>B2</td><td>B2</td></tr>
+  </table>
+</div>
+
+<!-- CAREER -->
+<div class="sec">
+  <h2>Career Goal</h2>
+  <p style="font-size:10.5pt;color:#222">
+    OT/ICS Cybersecurity — protecting industrial networks, SCADA/PLC systems and critical infrastructure. Planned path: Computer Engineering (Università Federico II, Naples) → GICSP certification.
+  </p>
+</div>
+
+</body>
+</html>
